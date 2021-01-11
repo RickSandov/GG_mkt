@@ -1,16 +1,10 @@
-// .normal-nav {
-//     @include navigation;
-// }
 
 .active {
     & a {
         background-color: $color-ggmkt;
         border-radius: 5rem;
 
-        // &:hover {
-
-        // }
-
+        
         @include respond(tab-port) {
             background: none;
         }
@@ -70,6 +64,7 @@
 
     #check {
         display: none;
+        
     }
 
     @include respond(tab-port) {
@@ -79,6 +74,7 @@
 
         .nav-check {
             display: block;
+            animation-delay: 2s !important;
         }
 
         & ul {

@@ -1,7 +1,7 @@
 .clients {
     position: relative;
     max-width: 80%;
-    margin: 4rem auto 0 auto;
+    margin: 0 auto;
     animation-delay: 2.3s !important;
     backface-visibility: hidden;
     animation-fill-mode: backwards;
@@ -54,7 +54,7 @@
     }
 
     @include respond(phone){
-        margin-top: -20rem;
+        top: -13rem;
 
         & h3 {
             font-size: 4rem;

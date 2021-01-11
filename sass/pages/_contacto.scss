@@ -6,26 +6,31 @@
         background-color: $color-primary-light;
         position: absolute;
         border-radius: 50rem;
+        
+        $contact-circle1: 45vw;
+        $contact-circle2: 30vw;
+        $contact-circle3: 20vw;
 
+        $contact-circle2-left: 60%;
+        $contact-circle3-left: 50%;
 
         &:nth-child(2) {
-            height: 50rem;
-            width: 50rem;
+            height: $contact-circle2;
+            width: $contact-circle2;
             top: 6rem;
-            left: 110rem;
+            left: $contact-circle2-left;
         }
 
         &:nth-child(3) {
-            height: 35rem;
-            width: 35rem;
+            height: $contact-circle3;
+            width: $contact-circle3;
             top: 70rem;
-            left: 90rem;
+            left: $contact-circle3-left;
         }
 
         &:nth-child(4) {
-            height: 80rem;
-            width: 80rem;
-            top: rem;
+            height: $contact-circle1;
+            width: $contact-circle1;
         }
     }
 
@@ -42,6 +47,10 @@
         width: 30%;
 
         animation-delay: 1.2s !important;
+
+        @include respond(tab-land){
+            width: 40%;
+        }
     }
 
     &__form {
@@ -61,7 +70,6 @@
             width: 100%;
             padding: 2rem 0 2rem 4rem;
             color: #fff;
-            margin: 8px 0;
             display: inline-block;
             border: none;
             border-radius: 5rem;
@@ -94,5 +102,57 @@
             }
         }
         
+    }
+
+    @include respond(tab-port){
+        position: static;
+
+        &__circle {
+            display: none;
+
+            &:nth-child(2) {
+                display: block;
+                position: absolute;
+                height: 80vw;
+                width: 80vw;
+                top: 6rem;
+                overflow: hidden;
+                left: 0;
+                // left: $contact-circle2-left;
+            }
+
+        }
+
+        &__form {
+            position: static;
+            width: 90%;
+
+            & input {
+                margin-bottom: 2rem;
+                box-shadow: none;
+            }
+
+            & button {
+                margin-top: 1rem;
+            }
+        }
+
+        &__img {
+            width: 90%;
+
+            @include respond(phone){
+                top: 55%;
+            }
+        }
+    }
+}
+
+@include respond(tab-port){
+    .contact-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20rem;
     }
 }
