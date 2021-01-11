@@ -1,0 +1,98 @@
+.contact {
+    height: 95vh;
+    position: relative;
+
+    &__circle {
+        background-color: $color-primary-light;
+        position: absolute;
+        border-radius: 50rem;
+
+
+        &:nth-child(2) {
+            height: 50rem;
+            width: 50rem;
+            top: 6rem;
+            left: 110rem;
+        }
+
+        &:nth-child(3) {
+            height: 35rem;
+            width: 35rem;
+            top: 70rem;
+            left: 90rem;
+        }
+
+        &:nth-child(4) {
+            height: 80rem;
+            width: 80rem;
+            top: rem;
+        }
+    }
+
+    & h2 {
+        font-size: 5rem;
+        font-weight: 300;
+        margin-bottom: 5rem;
+    }
+
+    &__img {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        width: 30%;
+
+        animation-delay: 1.2s !important;
+    }
+
+    &__form {
+        margin-top: 8rem;
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        animation-delay: 1.5s !important;
+        
+
+        & input {
+            background-color: $color-primary-dark;
+            width: 100%;
+            padding: 2rem 0 2rem 4rem;
+            color: #fff;
+            margin: 8px 0;
+            display: inline-block;
+            border: none;
+            border-radius: 5rem;
+            box-sizing: border-box;
+            margin-bottom: 3.5rem;
+            font-size: 2rem;
+            @include shadow;
+        }
+
+        & button {
+            align-self: flex-end;
+            margin-top: 4rem;
+            text-decoration: none;
+            padding: 1.7rem 7rem;
+            border-radius: 5rem;
+            background-color: $color-primary;
+            border: none;
+            color: white;
+            text-transform: capitalize;
+            font-size: 2rem;
+            font-weight: 300;
+            transition: all;
+            @include shadow;
+            transition: all .4s;
+
+            &:hover {
+                background-color: $color-ggmkt;
+                transform: translateY(.2rem);
+                box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.8);
+            }
+        }
+        
+    }
+}

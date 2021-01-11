@@ -1,0 +1,15 @@
+{
+  "name": "ggmarketing",
+  "version": "1.0.0",
+  "description": "GG marketing website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w --output-style compressed"
+  },
+  "author": "GG MARKETING",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {}
+}
