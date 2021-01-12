@@ -3,11 +3,13 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: $color-primary-light;
-    margin: 12rem auto;
-    padding: 4rem 3rem;
-    border-radius: 7rem;
-    width: 95%;
+    margin: 10rem auto 0 auto;
+    padding: 0 3rem 4rem 3rem;
+    // border-radius: 7rem;
+    width: 100%;
+
+    background-image: linear-gradient(rgba($color-primary-light, 0.3), white);
+    // background-image: linear-gradient(#f1f0fe, white);
 
     @include respond(tab-port){
         padding: 4rem 3rem;
@@ -19,31 +21,40 @@
 
 
     &__img {
-        flex: 0 1 50%;
-        height: 65%;
+        flex: 0 1 20%;
+        // height: 65%;
+        width: 2rem;
         animation-delay: 1s;
+        order: 2;
 
         @include respond(tab-port){
             flex: 0 1 100%;
             height: auto;
-            width: 100%;
+            width: 35%;
+            order: 0;
+            margin-top: 3rem;
+        }
+
+        @include respond(phone){
+            width: 60%;
         }
     }
 
     &__main {
         flex: 0 1 30%;
-        color: #fff;
+        color: $color-text;
+        text-align: left;
         // margin-right: 25rem;
 
         // animation-delay: 1.8s;
 
         &__title {
             font-size: 5rem;
-            text-transform: uppercase;
+            text-transform: capitalize;
             margin-bottom: 5rem;
 
             @include respond(tab-port) {
-                text-align: center;
+                // text-align: center;
                 flex: 0 1 100%;
                 margin-top: 4rem;
                 margin-bottom: 1.8rem;
@@ -55,15 +66,15 @@
         }
 
         &__text {
-            font-size: 3rem;
-            font-weight: 300;
+            font-size: 2rem;
+            // font-weight: 300;
             line-height: 4rem;
         }
 
         @include respond(tab-port){
             flex: 0 1 100%;
             margin: 0 auto;
-            text-align: center;
+            // text-align: center;
 
             &__text {
                 margin-bottom: 3rem;

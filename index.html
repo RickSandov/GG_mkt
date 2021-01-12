@@ -5,24 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GG Marketing ||</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700;900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/c6bf5c5efb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
     <header class="header">
 
-        <nav class="res-nav">
+        <nav class="res-nav index-nav" id="navbar">
+            <a href="index.html" class="logo"><img src="assets/gg_logo.png" alt=""></a>
             <input type="checkbox" id="check">
             <label for="check" data-aos="popUp" class="nav-check"><i class="fas fa-bars"></i></label>
             <ul>
-                <li class="active"><a href="index.html" >Inicio</a></li>
+                <li class="active"><a href="index.html">Inicio</a></li>
                 <li><a href="proyectos.html">Proyectos</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        
+
 
         <div class="header__heading">
             <h1 class="header__heading__primary">
@@ -31,10 +36,10 @@
         </div>
     </header>
 
-    <div class="main-background" >
-        <div class="main-background__circle"  data-aos-once="true" data-aos="popUp"></div>
-        <div class="main-background__circle"  data-aos-once="true" data-aos="popUp"></div>
-        <div class="main-background__circle"  data-aos-once="true" data-aos="popUp"></div>
+    <div class="main-background">
+        <div class="main-background__circle" data-aos-once="true" data-aos="popUp"></div>
+        <div class="main-background__circle" data-aos-once="true" data-aos="popUp"></div>
+        <div class="main-background__circle" data-aos-once="true" data-aos="popUp"></div>
     </div>
 
     <main class="main">
@@ -50,60 +55,69 @@
         </div>
 
         <div class="main__services">
-            <div class="card"  data-aos-once="true" data-aos="moveInLeft">
-                <img class="card__img" src="assets/ppc.svg" alt="PPC">
-                <h2 class="card__title">PPC</h2>
-                <p class="card__description">
-                    Aprovecha el potencial y todos los beneficios de las campañas de publicidad digital.
-                    Creamos y optimizamos las campañas de AdWords en distintas plataformas, asegurándonos de que tu
-                    inversión genere prospectos de calidad.
-                </p>
+            <div class="card" data-aos-once="true" data-aos="moveInLeft">
+                <img class="card__img" src="assets/ppc.png" alt="PPC">
+                <div class="card__info">
+                    <h2 class="card__title">PPC</h2>
+                    <p class="card__description">
+                        Aprovecha el potencial y todos los beneficios de las campañas de publicidad digital.
+                        Creamos y optimizamos las campañas de AdWords en distintas plataformas, asegurándonos de que tu
+                        inversión genere prospectos de calidad.
+                    </p>
+                </div>
             </div>
-            <div class="card"  data-aos-once="true" data-aos="moveInBottom">
+            <div class="card" data-aos-once="true" data-aos="moveInBottom">
                 <img class="card__img" src="assets/seo.svg" alt="SEO">
-                <h2 class="card__title">SEO</h2>
-                <p class="card__description">
-                    Nuestra misión es posicionarte en Google. Creamos estrategias y un plan de contenido único y de
-                    calidad para lograr que tus clientes potenciales te encuentran en los primeros lugares al buscar tu
-                    producto y servicio en Google.
-                </p>
+                <div class="card__info">
+                    <h2 class="card__title">SEO</h2>
+                    <p class="card__description">
+                        Nuestra misión es posicionarte en Google. Creamos estrategias y un plan de contenido único y de
+                        calidad para lograr que tus clientes potenciales te encuentran en los primeros lugares al buscar
+                        tu
+                        producto y servicio en Google.
+                    </p>
+                </div>
             </div>
-            <div class="card"  data-aos-once="true" data-aos="moveInRight">
+            <div class="card" data-aos-once="true" data-aos="moveInRight">
                 <img class="card__img" src="assets/estrategia.svg" alt="Estrategia Digital">
-                <h2 class="card__title">Estrategia Digital</h2>
-                <p class="card__description">
-                    Te ayudamos a incrementar las ventas de tus productos o servicos a través de una estretegia digital
-                    global de posicionamiento en motores de búsqueda y otros canales digitales para que obtengas los
-                    mejores resultados.
-                </p>
+                <div class="card__info">
+                    <h2 class="card__title">Estrategia Digital</h2>
+                    <p class="card__description">
+                        Te ayudamos a incrementar las ventas de tus productos o servicos a través de una estretegia
+                        digital
+                        global de posicionamiento en motores de búsqueda y otros canales digitales para que obtengas los
+                        mejores resultados.
+                    </p>
+                </div>
             </div>
         </div>
     </main>
 
     <section class="google-partner">
-        <img src="assets/busnisslap.svg" alt="Google Partner"  data-aos-once="true" data-aos="popUp" class="google-partner__img">
+        <img src="assets/busnisslap.svg" alt="Google Partner" data-aos-once="true" data-aos="popUp"
+            class="google-partner__img">
         <div class="google-partner__aside">
-            <div class="google-partner__aside__bubble"  data-aos-once="true" data-aos="appear">
+            <div class="google-partner__aside__bubble" data-aos-once="true" data-aos="appear">
                 <p class="google-partner__aside__bubble__text">
                     Somos expertos en <span>Google ads, Mobile ads, Display ads y Video ads.</span>
                 </p>
             </div>
-            <div class="google-partner__aside__text"  data-aos-once="true" data-aos="moveInBottom">
+            <div class="google-partner__aside__text" data-aos-once="true" data-aos="moveInBottom">
                 <p>¿Por qué confiar en nosotros? <span class="google-partner__aside__text__span">Somos una agencia de
                         marketing certificada como Google Partner.</span>
                 </p>
             </div>
         </div>
 
-        <div  data-aos-once="true" data-aos="moveInLeft" class="google-partner__certificate" >
+        <div data-aos-once="true" data-aos="moveInLeft" class="google-partner__certificate">
             <div class="google-partner__certificate__separator"></div>
             <img src="assets/partner.png" alt="" class="google-partner__certificate">
         </div>
     </section>
 
     <div class="web-offer">
-        <img  data-aos-once="true" data-aos="appear" src="assets/businesswebsite.svg" alt="Website 1View" class="web-offer__img">
-        <div class="web-offer__main"  data-aos-once="true" data-aos="moveInLeft" >
+        <img data-aos-once="true" data-aos="appear" src="assets/gg_pc.png" alt="Website 1View" class="web-offer__img">
+        <div class="web-offer__main" data-aos-once="true" data-aos="moveInLeft">
             <h2 class="web-offer__main__title">diseño web</h2>
             <p class="web-offer__main__text">Tenemos al mejor equipo de diseño web responsive; un diseño moderno y
                 adaptable a
@@ -142,11 +156,10 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/index.js"></script>
+ 
 </body>
 
 </html>
