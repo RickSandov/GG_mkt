@@ -36,6 +36,10 @@
                     font-size: 3rem;
                 }
 
+                @include respond(tab-port) {
+                    color: white !important;
+                }
+
             }
 
             &:hover {
@@ -87,18 +91,20 @@
 
     &:link,
     &:visited {
-        margin: 6rem 0 3rem 0;
-        font-size: 5rem;
-        padding: 2rem 10rem;
+        margin: 0;
+        font-size: 3.3rem;
+        padding: 2rem 8rem;
         background-color: $color-primary;
         border-radius: 10rem;
         @include shadow;
         transition: all .4s;
+        max-width: 90%;
         
 
         @include respond(phone){
-            padding: 2rem 8rem;
-            font-size: 4rem;
+            padding: 2rem 0;
+            width: 100%;
+            font-size: 2.5rem;
             text-align: center;
         }
 
@@ -111,7 +117,7 @@
 
 @mixin hoverHigh {
     background-color: $color-ggmkt;
-    transform: scale(1.5) !important;
+    transform: scale(1.05) !important;
     box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.8);
 }
 
@@ -194,3 +200,48 @@
 //         animation-fill-mode: backwards;
 //     }
 // }
+
+
+
+@mixin section {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    padding: 0 3rem 4rem 3rem;
+    // border-radius: 7rem;
+    width: 100%;
+
+    background-image: linear-gradient(rgba($color-primary-light, 0.3), white);
+
+    @include respond(tab-port){
+        padding: 4rem 3rem;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    &__img {
+        flex: 0 1 20%;
+        // height: 65%;
+        width: 2rem;
+        animation-delay: 1s;
+        order: 2;
+
+        @include respond(tab-port){
+            flex: 0 1 100%;
+            height: auto;
+            width: 35%;
+            order: 0;
+            margin-top: 3rem;
+        }
+
+        @include respond(phone){
+            width: 60%;
+        }
+    }
+
+    
+}

@@ -17,6 +17,8 @@
 .res-nav {
 
     margin: 0 auto;
+    position: absolute;
+    z-index: 999;
 
 
     .active {
@@ -64,6 +66,12 @@
         background-color: $color-primary-dark;
         padding: .7rem 1.5rem;
         border-radius: 50rem;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+
+        }
 
         z-index: 99;
 
@@ -129,10 +137,21 @@
 
 
             }
+
+            @include respond(tab-port) {
+
+            }
         }
 
-        #check:checked~ul {
-            left: 0;
+        #check:checked {
+            &~.nav-check {
+                color: red;
+            }
+
+            &~ul {
+                left: 0;
+            }
+            
         }
 
 
@@ -152,7 +171,7 @@
 
 @include respond(from-tab-land) {
 
-    .index-nav {
+    .white-nav {
         & ul {
             & li {
                 & a {
@@ -169,6 +188,7 @@
             
         }
     }
+
 
     .sticky {
 
@@ -215,6 +235,10 @@
 
                 @include respond(phone) {
                     font-size: 3rem;
+                }
+
+                @include respond(tab-port) {
+                    color: white !important;
                 }
 
             }

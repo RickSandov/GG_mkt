@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/favicon.png"/>
     <title>GG Marketing ||</title>
     <script src="https://kit.fontawesome.com/c6bf5c5efb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -11,18 +12,20 @@
 
 <body>
 
+    <nav class="res-nav" id="navbar">
+        <a href="index.html" class="logo"><img src="assets/gg_logo.png" alt=""></a>
+        <input type="checkbox" id="check">
+        <label for="check" data-aos="popUp" class="nav-check"><i class="fas fa-bars"></i></label>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="active"><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
     <div class="projects">
-        <nav class="res-nav" id="navbar">
-            <a href="index.html" class="logo"><img src="assets/gg_logo.png" alt=""></a>
-            <input type="checkbox" id="check">
-            <label for="check" data-aos="popUp" class="nav-check"><i class="fas fa-bars"></i></label>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li class="active"><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        
         <div class="projects-header">
             <div class="projects__circle" data-aos-once="true" data-aos="popUp"></div>
             <h2 class="projects__title" data-aos-once="true" data-aos="moveInLeft">Nuestros <span>clientes.</span></h2>
@@ -32,22 +35,29 @@
 
     <div class="clients" data-aos-once="true" data-aos="moveInBottom">
         <h3>Algunos de nuestros clientes</h3>
+        <hr>
         <div class="clients__container">
-            <a href="https://elkilate.com.mx/" target="_blank">
-                <img src="./assets/elkilate.svg" alt="">
-            </a>
-            <a href="https://www.sibradgo.com/#" target="_blank">
-                <img src="./assets/sibra.png" alt="">
-            </a>
-            <a href="https://elated-brown-3f4778.netlify.app/" target="_blank">
-                <img src="./assets/avila.png" alt="">
-            </a>
+            <div class="client">
+                <a href="https://elkilate.com.mx/" target="_blank">
+                    <img src="./assets/elkilate.webp" alt="elkilate">
+                </a>
+            </div>
+            <div class="client">
+                <a href="https://www.sibradgo.com/#" target="_blank">
+                    <img src="./assets/sibra.webp" alt="sibra">
+                </a>
+            </div>
+            <div class="client">
+                <a href="https://maxi-pollo.com/" target="_blank">
+                    <img src="./assets/maxi-pollo.webp" alt="maxi-pollo">
+                </a>
+            </div>
         </div>
-        <h3 class="hide">Websites de clientes</h3>
+        <!-- <h3 class="hide">Websites de clientes</h3>
         <div class="clients__web-container" data-aos-once="true" data-aos="moveInBottom">
             <img src="./assets/web1.jpg" alt="">
             <img src="./assets/web2.jpg" alt="">
-        </div>
+        </div> -->
     </div>
 
 
