@@ -221,6 +221,7 @@
 
             &:link,
             &:visited {
+                color: $color-text !important;
                 text-decoration: none;
                 text-transform: uppercase;
 
