@@ -1,6 +1,8 @@
 // Initialize AOS
 AOS.init();
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+
 // Get the navbar
 let navbar = document.getElementById("navbar");
 
