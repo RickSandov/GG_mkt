@@ -183,9 +183,7 @@
 
                    
                 }
-            }
-
-            
+            } 
         }
     }
 
@@ -204,6 +202,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        & ul {
+            & li {
+                & a {
+
+                    &:link,
+                    &:visited {
+                        color: $color-text !important
+                    }
+
+                   
+                }
+            } 
+        }
 
         & .logo {
 
@@ -228,7 +240,6 @@
                 padding: .5rem 2rem;
                 margin: 0 2rem;
 
-                color: $color-text !important;
                 font-size: 2rem;
                 transition: all .5s;
                 // padding: .5rem 3rem;
