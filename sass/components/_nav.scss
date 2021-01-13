@@ -211,6 +211,8 @@
                     &:visited {
                         color: $color-text !important
                     }
+
+                    
                    
                 }
             } 
@@ -276,6 +278,9 @@
                         color: $color-text !important;
                     }
 
+                    &:hover {
+                        color: white !important;
+                    }
                    
                 }
             }
