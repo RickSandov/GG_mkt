@@ -256,5 +256,23 @@
             }
 
         }
+
+        & ul {
+            & li {
+                & a {
+
+                    &:link,
+                    &:visited {
+                        color: $color-text !important;
+                    }
+
+                   
+                }
+            }
+
+            
+        }
+
+        
     }
 }
