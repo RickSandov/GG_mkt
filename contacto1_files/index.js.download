@@ -1,7 +1,6 @@
 // Initialize AOS
 AOS.init();
 
-
 // Get the navbar
 let navbar = document.getElementById("navbar");
 
