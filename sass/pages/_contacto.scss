@@ -130,6 +130,8 @@
     @include respond(tab-land) {
         // position: static;
 
+        height: 90rem;
+
         &__circle {
             display: none;
 
