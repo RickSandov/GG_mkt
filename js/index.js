@@ -39,7 +39,7 @@ const changeOption = async () => {
   current = 0;
 
   if(firstRun){
-    setInterval(changeOption, 10535);
+    setInterval(changeOption, 10540);
     firstRun = false;
   }
   
