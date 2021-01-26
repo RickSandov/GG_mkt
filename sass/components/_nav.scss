@@ -121,6 +121,8 @@
 
                 & a {
 
+                    padding: 100%;
+
                     &:hover,
                     &:active {
                         background: none;
@@ -151,6 +153,8 @@
                 background-color: #fff;
                 @include shadow;
                 transform: scale(1.5) translateY(.5rem);
+                // content: '';
+                // content: "<i class="fas fa-times"></i>";
                 
             }
 
@@ -297,3 +301,5 @@
         
     }
 }
+
+
