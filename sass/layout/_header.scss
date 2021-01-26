@@ -92,6 +92,13 @@
                     border-radius: 10rem;
                     font-weight: 500;
                     border: none;
+                    transition: .4s all ease-in-out;
+
+                    &:hover {
+                        @include shadow-light;
+                        background-color: darken( $color-ggmkt, 5% )
+                    }
+
                 }
 
                 @include respond(tab-port){

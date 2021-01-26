@@ -33,9 +33,15 @@ function sleep(ms) {
 }
 
 let last = 0;
+let firstRun = true
 
 const changeOption = async () => {
   current = 0;
+
+  if(firstRun){
+    setInterval(changeOption, 10535);
+    firstRun = false;
+  }
   
   optionsChildren[last].classList.remove('optionActive');
   optionsChildren[current].classList.add('optionActive');
@@ -52,11 +58,15 @@ const changeOption = async () => {
 
   await sleep(3500);
   last = current;
+
+
+  
   
 }
 
 changeOption();
-setInterval(changeOption, 10530);
+
+
 
 
 
