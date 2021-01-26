@@ -58,9 +58,6 @@ const changeOption = async () => {
 
   await sleep(3500);
   last = current;
-
-
-  
   
 }
 
